@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cinema Showcase</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1 class="logo">Cinema</h1>
-    <div class="search-bar">
-      <input type="text" placeholder="Search movies..." />
-      <button>Search</button>
-    <a href="signup.html">
-      <button>Register</button>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Showcase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Cinema</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search movies..." />
+        <button>Search</button>
+        <a href="signup.html">
+          <button>Register</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="movie-grid">
+        <!-- Each movie card -->
+        <div class="movie-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/a/aa/JoJo_Part_1_Phantom_Blood.jpg"
+            alt="JoJo's Bizarre Adventure"
+          />
+          <div class="movie-info">
+            <h2>JoJo's Bizarre Adventure</h2>
+            <div class="buttons">
+              <button class="watch">Watch</button>
+              <button class="view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate movie cards for example -->
+        <div class="movie-card">
+          <img
+            src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974758371/jojos-bizarre-adventure-part-7-steel-ball-run-vol-3-9781974758371_hr.jpg"
+            alt="JoJo's Bizarre Adventure"
+          />
+          <div class="movie-info">
+            <h2>Steel Ball Run</h2>
+            <div class="buttons">
+              <button class="watch">Watch</button>
+              <a href="view.html">
+                <button class="view">View</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more movie-card divs as needed -->
+      </section>
+    </main>
+    <div id="movielist">
       
     </div>
-  </header>
-
-  <main>
-    <section class="movie-grid">
-      <!-- Each movie card -->
-      <div class="movie-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/JoJo_Part_1_Phantom_Blood.jpg" alt="JoJo's Bizarre Adventure" />
-        <div class="movie-info">
-          <h2>JoJo's Bizarre Adventure</h2>
-          <div class="buttons">
-            <button class="watch">Watch</button>
-            <button class="view">View</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Duplicate movie cards for example -->
-      <div class="movie-card">
-        <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974758371/jojos-bizarre-adventure-part-7-steel-ball-run-vol-3-9781974758371_hr.jpg" alt="JoJo's Bizarre Adventure" />
-        <div class="movie-info">
-          <h2>Steel Ball Run</h2>
-          <div class="buttons">
-            <button class="watch">Watch</button>
-            <a href="view.html">
-              <button class="view">View</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more movie-card divs as needed -->
-    </section>
-  </main>
-
-  <footer>
-    <p>Copyright © 2025 | Made by Me</p>
-  </footer>
-</body>
+    <script src="script.js"></script>
+    <footer>
+      <p>Copyright © 2025 | Made by Me</p>
+    </footer>
+  </body>
 </html>
